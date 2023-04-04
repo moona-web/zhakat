@@ -1,0 +1,521 @@
+* {
+  margin: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  font-family: "Lobster", cursive;
+}
+
+main {
+  width: 100%;
+}
+main > .para1 {
+  width: 100%;
+  height: 70px;
+  background-image: url(../img/back.jfif);
+  display: flex;
+}
+main > .para1 > div:nth-of-type(1) {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main > .para1 > div:nth-of-type(1) > p {
+  color: white;
+  font-size: 30px;
+}
+main > .para1 > div:nth-of-type(2) {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+main > .para1 > div:nth-of-type(2) > span {
+  color: red;
+  font-size: 25px;
+  background-color: white;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+}
+main > .menu {
+  width: 100%;
+  height: 70px;
+  display: flex;
+}
+main > .menu > div:nth-of-type(1) {
+  width: 10%;
+  height: 100%;
+}
+main > .menu > div:nth-of-type(1) > figure {
+  width: 100%;
+  height: 100%;
+}
+main > .menu > div:nth-of-type(1) > figure > img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+main > .menu > div:nth-of-type(2) {
+  width: 70%;
+  height: 100%;
+}
+main > .menu > div:nth-of-type(2) > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+main > .menu > div:nth-of-type(2) > ul > li {
+  list-style-type: none;
+}
+main > .menu > div:nth-of-type(2) > ul > li:nth-of-type(1):hover > .box,
+main > .menu > div:nth-of-type(2) > ul > li:nth-of-type(1):hover > .box1, main > .menu > div:nth-of-type(2) > ul > li:nth-of-type(2):hover > .box,
+main > .menu > div:nth-of-type(2) > ul > li:nth-of-type(2):hover > .box1 {
+  opacity: 1;
+  visibility: visible;
+  z-index: 9999;
+}
+main > .menu > div:nth-of-type(2) > ul > li > .box {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  top: 140px;
+  left: 0;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  z-index: 9999;
+}
+main > .menu > div:nth-of-type(2) > ul > li > .box > span {
+  width: 25%;
+  height: 100%;
+  display: flex;
+}
+main > .menu > div:nth-of-type(2) > ul > li > .box > span > figure {
+  width: 15%;
+  height: 100%;
+  padding: 0 5px;
+  margin: 0 30px;
+}
+main > .menu > div:nth-of-type(2) > ul > li > .box > span > figure > img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+main > .menu > div:nth-of-type(2) > ul > li > .box > span p {
+  width: 50%;
+  height: 100%;
+  color: rgba(128, 128, 128, 0.74);
+  padding: 10px 0;
+  margin: 0 -25px;
+}
+main > .menu > div:nth-of-type(2) > ul > li > .box1 {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 140px;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  z-index: 9999;
+}
+main > .menu > div:nth-of-type(2) > ul > li > .box1 > span {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  margin: 10px;
+}
+main > .menu > div:nth-of-type(2) > ul > li > .box1 > span > figure {
+  width: 15%;
+  height: 100%;
+  padding: 0 5px;
+  margin: 0 30px;
+}
+main > .menu > div:nth-of-type(2) > ul > li > .box1 > span > figure > img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+main > .menu > div:nth-of-type(2) > ul > li > .box1 > span p {
+  width: 50%;
+  height: 100%;
+  color: rgba(128, 128, 128, 0.74);
+  padding: 10px 0;
+  margin: 0 -25px;
+}
+main > .menu > div:nth-of-type(2) > ul > li > a {
+  color: rgba(128, 128, 128, 0.74);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15PX;
+  text-decoration: none;
+  padding: 0 10PX;
+}
+main > .menu > :nth-of-type(3) {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+main > .menu > :nth-of-type(3) > span {
+  padding: 0 10px;
+}
+main > .menu > :nth-of-type(3) > span:nth-of-type(1) {
+  font-size: 25px;
+}
+main > .menu > :nth-of-type(3) > span:nth-of-type(2) {
+  color: rgba(128, 128, 128, 0.74);
+  font-size: 25px;
+}
+main > .menu > :nth-of-type(3) > span:nth-of-type(2):hover {
+  background-color: rgba(128, 128, 128, 0.123);
+}
+main > .menu > :nth-of-type(3) > span:nth-of-type(3) {
+  color: white;
+  background-color: orange;
+  font-size: 25px;
+  padding: 0 20px;
+}
+main > .menu > :nth-of-type(3) > span:nth-of-type(3):hover {
+  background-color: rgb(197, 129, 3);
+}
+main > .text {
+  width: 100%;
+  height: 120px;
+  background-color: rgba(150, 9, 150, 0.74);
+}
+main > .text > h2,
+main > .text h3 {
+  line-height: 40px;
+  color: white;
+  padding-right: 200px;
+  padding-top: 15px;
+}
+main > .text > h2 {
+  font-size: 35px;
+  font-weight: bold;
+}
+main > .text > h3 {
+  font-size: 15px;
+}
+main > .para2 {
+  width: 100%;
+  display: flex;
+}
+main > .para2 > div:nth-of-type(1) {
+  width: 30%;
+  height: 500px;
+}
+main > .para2 > div:nth-of-type(1) > div {
+  width: 80%;
+  height: 40px;
+  margin: 30px;
+  text-align: center;
+  background-color: orange;
+  color: white;
+  font-size: 25px;
+  border-radius: 10px;
+}
+main > .para2 > div:nth-of-type(1) > aside {
+  border-top: 1px solid rgba(128, 128, 128, 0.212);
+  margin: 0 30px;
+  width: 80%;
+}
+main > .para2 > div:nth-of-type(1) > form {
+  width: 80%;
+}
+main > .para2 > div:nth-of-type(1) > form > input {
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.322);
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 0 30px;
+  height: 50px;
+}
+main > .para2 > div:nth-of-type(1) > article {
+  width: 80%;
+  color: rgba(128, 128, 128, 0.863);
+  height: 50px;
+  margin: 30px;
+  background-color: rgba(128, 128, 128, 0.123);
+  font-size: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.404);
+  border-radius: 5px;
+}
+main > .para2 > div:nth-of-type(1) > ul {
+  width: 80%;
+}
+main > .para2 > div:nth-of-type(1) > ul > li {
+  width: 100%;
+  list-style-type: none;
+  margin: 10px 0;
+}
+main > .para2 > div:nth-of-type(1) > ul > li > a {
+  width: 100%;
+  font-size: 20px;
+  color: rgba(128, 128, 128, 0.774);
+}
+main > .para2 > div:nth-of-type(2) {
+  width: 70%;
+}
+main > .para2 > div:nth-of-type(2) > div {
+  width: 90%;
+  height: 60px;
+  border: 2px solid rgba(128, 128, 128, 0.226);
+  border-radius: 50px;
+  margin: 30px;
+  transition: 0.4s;
+}
+main > .para2 > div:nth-of-type(2) > div:hover {
+  border: 2px solid rgba(128, 128, 128, 0.699);
+}
+main > .para2 > div:nth-of-type(2) > div > form {
+  width: 100%;
+  height: 100%;
+}
+main > .para2 > div:nth-of-type(2) > div > form > i {
+  width: 20%;
+  font-size: 30px;
+  color: rgba(128, 128, 128, 0.61);
+}
+main > .para2 > div:nth-of-type(2) > div > form > input:nth-of-type(1) {
+  width: 85%;
+  height: 50px;
+  border-radius: 50px;
+  margin: 25px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  margin: 5px;
+  padding: 0 40px;
+}
+main > .para2 > div:nth-of-type(2) > div > form > input:nth-of-type(1)::-moz-placeholder {
+  color: rgba(128, 128, 128, 0.521);
+}
+main > .para2 > div:nth-of-type(2) > div > form > input:nth-of-type(1)::placeholder {
+  color: rgba(128, 128, 128, 0.521);
+}
+main > .para2 > div:nth-of-type(2) > div > form > input:nth-of-type(2),
+main > .para2 > div:nth-of-type(2) > div > form > input:nth-of-type(3),
+main > .para2 > div:nth-of-type(2) > div > form > input:nth-of-type(4),
+main > .para2 > div:nth-of-type(2) > div > form > input:nth-of-type(5) {
+  margin: 0 20px;
+}
+main > .para2 > div:nth-of-type(2) > div > form > label {
+  margin: 0 10px;
+}
+main > .para2 > div:nth-of-type(2) > .pic {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+main > .para2 > div:nth-of-type(2) > .pic > div {
+  width: 30%;
+  height: 450px;
+  margin: 80px 10px;
+}
+main > .para2 > div:nth-of-type(2) > .pic > div > div:nth-of-type(1) {
+  width: 100%;
+  height: 250px;
+}
+main > .para2 > div:nth-of-type(2) > .pic > div > div:nth-of-type(1) > figure {
+  width: 100%;
+  height: 100%;
+}
+main > .para2 > div:nth-of-type(2) > .pic > div > div:nth-of-type(1) > figure > img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+main > .para2 > div:nth-of-type(2) > .pic > div > div:nth-of-type(2) {
+  width: 100%;
+  height: 70px;
+  line-height: 30px;
+  transition: 0.4s;
+}
+main > .para2 > div:nth-of-type(2) > .pic > div > div:nth-of-type(2):hover {
+  height: 200px;
+}
+main > .para2 > div:nth-of-type(2) > .pic > div > div:nth-of-type(2):hover > figcaption > p,
+main > .para2 > div:nth-of-type(2) > .pic > div > div:nth-of-type(2):hover > figcaption > h4 {
+  height: 100px;
+}
+main > .para2 > div:nth-of-type(2) > .pic > div > div:nth-of-type(2) > figcaption {
+  width: 100%;
+  min-height: 10px;
+}
+main > .para2 > div:nth-of-type(2) > .pic > div > div:nth-of-type(2) > figcaption > h3 {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0;
+}
+main > .para2 > div:nth-of-type(2) > .pic > div > div:nth-of-type(2) > figcaption > p,
+main > .para2 > div:nth-of-type(2) > .pic > div > div:nth-of-type(2) > figcaption > h4 {
+  height: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main > .para2 > div:nth-of-type(2) > .pic > div > div:nth-of-type(3) {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+}
+main > .para2 > div:nth-of-type(2) > .pic > div > div:nth-of-type(3) > span:nth-of-type(2),
+main > .para2 > div:nth-of-type(2) > .pic > div > div:nth-of-type(3) > span:nth-of-type(4) {
+  color: rgba(128, 128, 128, 0.623);
+  padding: 0 10px;
+}
+main > .fin {
+  width: 90%;
+  border: 2px solid rgba(128, 128, 128, 0.226);
+  margin: 800px 0;
+  margin-right: 55px;
+  box-shadow: 1px 1px 3px 1px gray;
+  border-radius: 5px;
+}
+main > .fin > h3 {
+  color: orange;
+  font-size: 30px;
+  padding: 20px 30px;
+}
+main > .fin > aside {
+  border-top: 1px solid orange;
+  margin: 0 30px;
+  width: 90%;
+}
+main > .fin > h4 {
+  text-align: center;
+  color: gray;
+  padding-top: 10px;
+  font-size: 20px;
+}
+main > .fin > aside:nth-of-type(2) {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  margin: 60px 30px;
+}
+main > .fin > aside:nth-of-type(2) > div {
+  width: 100%;
+}
+main > .fin > aside:nth-of-type(2) > div > figure {
+  width: 100%;
+  height: 100%;
+}
+main > .fin > aside:nth-of-type(2) > div > figure > img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+main > .fin > figcaption {
+  min-height: 10px;
+}
+main > .fin > figcaption:hover > * {
+  opacity: 1;
+  height: 220px;
+}
+main > .fin > figcaption > * {
+  line-height: 30px;
+  height: 10px;
+  opacity: 0;
+}
+main > .fot {
+  width: 100%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.63);
+}
+main > .fot > aside {
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+main > .fot > aside > div:nth-of-type(1),
+main > .fot > aside > div:nth-of-type(3) {
+  width: 40%;
+  height: 100%;
+}
+main > .fot > aside > div:nth-of-type(1) > ul,
+main > .fot > aside > div:nth-of-type(3) > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+main > .fot > aside > div:nth-of-type(1) > ul > li,
+main > .fot > aside > div:nth-of-type(3) > ul > li {
+  list-style-type: none;
+  margin: 20px;
+}
+main > .fot > aside > div:nth-of-type(1) > ul > li > a,
+main > .fot > aside > div:nth-of-type(3) > ul > li > a {
+  height: 100%;
+  width: 100%;
+  color: rgba(128, 128, 128, 0.644);
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  text-decoration: none;
+  align-items: center;
+}
+main > .fot > aside > div:nth-of-type(2) {
+  width: 20%;
+  height: 100%;
+}
+main > .fot > aside > div:nth-of-type(2) > figure {
+  width: 100%;
+  height: 100%;
+}
+main > .fot > aside > div:nth-of-type(2) > figure > img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+main > .fot > article {
+  border-top: 1px solid rgba(128, 128, 128, 0.644);
+  margin: 40px 60px;
+  width: 90%;
+}
+main > .fot > div {
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+main > .fot > div > aside:nth-of-type(1) {
+  width: 50%;
+  height: 100%;
+}
+main > .fot > div > aside:nth-of-type(1) > h4 {
+  padding: 30px;
+  color: rgba(128, 128, 128, 0.644);
+}
+main > .fot > div > aside:nth-of-type(1) > i {
+  font-size: 20px;
+  padding: 5px;
+  color: rgba(128, 128, 128, 0.644);
+}
+main > .fot > div > aside:nth-of-type(2) {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+main > .fot > div > aside:nth-of-type(2) > figure {
+  width: 20%;
+  height: 100%;
+}
+main > .fot > div > aside:nth-of-type(2) > figure > img {
+  width: 20%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+}/*# sourceMappingURL=master.css.map */
